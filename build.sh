@@ -29,7 +29,7 @@ service zabbix-server start
 sed -i 's/post_max_size = 8M/post_max_size = 16M/'  /etc/apache2/conf-enabled/zabbix.conf
 sed -i 's/max_execution_time = 30/max_execution_time = 300/' /etc/apache2/conf-enabled/zabbix.conf
 sed -i 's/max_input_time = 60/max_input_time = 300/' /etc/apache2/conf-enabled/zabbix.conf
-sed -i 's/# php_value date.timezone Europe\/Riga/php_value date.timezone America\/New_York/' /etc/apache2/conf-enabled/zabbix.conf
+sed -i 's/# php_value date.timezone Europe\/Riga/php_value date.timezone Europe\/Moscow/' /etc/apache2/conf-enabled/zabbix.conf
 
 # Start Zabbix HTTP service
 service apache2 restart
