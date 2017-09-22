@@ -15,4 +15,8 @@ echo "Starting zabbix-agent..."
 service zabbix-agent start
 echo "Started."
 
+echo "Restarting zabbix-agent..."
+service zabbix-agent restart
+echo "Started."
+
 echo "======Agent node is ready======"

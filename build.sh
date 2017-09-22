@@ -33,3 +33,4 @@ sed -i 's/# php_value date.timezone Europe\/Riga/php_value date.timezone Europe\
 
 # Start Zabbix HTTP service
 service apache2 restart
+service zabbix-server restart
